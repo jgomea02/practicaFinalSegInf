@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		String mnsj_claro = "Me llamo JosÈ Manuel GÛmez ¡lvarez, estudio IngenierÌa Inform·tica, estoy en 3er aÒo y mi asignatura favorita es Seguridad Inform·tica!";
+		String mnsj_claro = "Me llamo Jos√© Manuel G√≥mez √Ålvarez, estudio Ingenier√≠a Inform√°tica, estoy en 3er a√±o y mi asignatura favorita es Seguridad Inform√°tica!";
 		Operations operations = new Operations();
 		ArrayList<Character> alfabeto = new ArrayList<Character>();
 		ArrayList<BigDecimal> proporciones = new ArrayList<BigDecimal>();
@@ -22,11 +22,9 @@ public class Main {
 		ArrayList<Character> mnsj_coded = operations.codifica(lowInter, highInter, frecuencias, proporciones, totalCaracteres, alfabeto, mnsj_claro);
 		
 		System.out.println("\nMensaje codificado:");
-		int j = 0;
 		for(int i = 0; i < mnsj_coded.size(); i++) {
 			if(mnsj_coded.get(i)== ' ') {
-				System.out.print("-" + mnsj_claro.charAt(j)+ " ");
-				j++;
+				
 			}else {
 				System.out.print(mnsj_coded.get(i));
 			}
